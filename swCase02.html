@@ -10,10 +10,24 @@
 
     //Entrada
 
+     const informe = prompt(`Qual eo assunto mais dificil da disciplina Variáveis e Operadores (VO),utura de Decisão (ED),Estruturas de Repetição (RE)`).toUpperCase();
 
     //Processamento
-
+   let prova;
+   switch (informe){
+    case "VO":
+     respostafinal = "Primeiro";
+    break;
+    case "ED":
+     respostafinal = "Segundo";
+    break;
+    case "RE":
+     respostafinal = "Terceiro";
+    break;
+   }
 
     //Saída
+
+   document.write (`${respostafinal}`);
 
 </script>

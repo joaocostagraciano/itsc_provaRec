@@ -11,11 +11,29 @@
     */
 
     //Entrada
-
+  
+     const cidade = prompt(`me informe qual a sua cidade de nascimento, que poderá ser Joinville (JL), São Francisco do Sul (SF), Araquari (AR) ou Balneário Barra do Sul (BS).`).toUpperCase();
 
     //Processamento
-
-
+     
+    let cidades;
+    switch (cidade){
+     case "JL":
+       resposta = "Urbano";
+      break;
+    case "SF":
+       resposta = "Praia";
+      break;
+    case "AR":
+       resposta = "Metrópole";
+      break;
+    case "BS":
+       resposta = "Praia";
+      break;   
+    }
     //Saída
+  
+    document.write (`${resposta}`);
+    
 
 </script>
